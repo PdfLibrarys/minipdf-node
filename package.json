@@ -6,11 +6,10 @@
   "author": "MiniPdf contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mini-software/MiniPdf.git",
-    "directory": "minipdf-node"
+    "url": "git+https://github.com/PdfLibrarys/minipdf-node.git"
   },
-  "homepage": "https://github.com/mini-software/MiniPdf/tree/main/minipdf-node",
-  "bugs": "https://github.com/mini-software/MiniPdf/issues",
+  "homepage": "https://github.com/PdfLibrarys/minipdf-node",
+  "bugs": "https://github.com/PdfLibrarys/minipdf-node/issues",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

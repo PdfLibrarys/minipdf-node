@@ -31,7 +31,6 @@ const expectedNativePackages = generatedNativePackages.map((name) =>
 const fixturePath = path.join(
   __dirname,
   '..',
-  '..',
   'tests',
   'Issue_Files',
   'docx',

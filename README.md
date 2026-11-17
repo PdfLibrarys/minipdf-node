@@ -1,6 +1,6 @@
 # MiniPdf for Node.js
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](../LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 Experimental native Node.js bindings for the MiniPdf Rust conversion engine.
 The package converts XLSX, DOCX, and PPTX files without requiring Microsoft
@@ -26,7 +26,7 @@ musl Linux on x64 and ARM64.
 ## Development
 
 ```powershell
-Set-Location minipdf-node
+Set-Location path\to\minipdf-node
 npm install
 npm run build
 ```
@@ -108,3 +108,15 @@ with a short-lived granular npm token that can publish new packages and bypass
 After the initial release, configure `npm-publish.yml` as the trusted GitHub
 Actions publisher for the main package and all eight platform packages. Future
 `node-v*` GitHub releases use OIDC to stage packages for maintainer approval.
+## Repository migration
+
+This implementation now lives in [https://github.com/PdfLibrarys/minipdf-node](https://github.com/PdfLibrarys/minipdf-node). Its language-specific
+Git history was preserved from [MiniPdf](https://github.com/mini-software/MiniPdf)
+(source commit `862ab485fdf8c5b3d3ec76afb6145f4ff68bf987`).
+The original repository maintains the .NET implementation. Open issues and
+pull requests for this implementation in this repository.
+
+The native engine is fetched from [minipdf-rs](https://github.com/PdfLibrarys/minipdf-rs)
+using an immutable Git revision in the Cargo manifest. No sibling checkout is
+required. Updating the engine requires changing that revision and regenerating
+the Cargo lockfile.
