@@ -1,5 +1,7 @@
 # MiniPdf for Node.js
 
+[English](README.md) | [zh-CN](docs/README.zh-CN.md) | [zh-TW](docs/README.zh-TW.md) | [ja](docs/README.ja.md) | [ko](docs/README.ko.md) | [it](docs/README.it.md) | [fr](docs/README.fr.md)
+
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 Experimental native Node.js bindings for the MiniPdf Rust conversion engine.
@@ -120,3 +122,8 @@ The native engine is fetched from [minipdf-rs](https://github.com/PdfLibrarys/mi
 using an immutable Git revision in the Cargo manifest. No sibling checkout is
 required. Updating the engine requires changing that revision and regenerating
 the Cargo lockfile.
+
+## Visual results
+
+- [XLSX](https://mini-software.github.io/minipdf-web-page/?language=node&suite=issue&format=xlsx)
+- [DOCX](https://mini-software.github.io/minipdf-web-page/?language=node&suite=issue&format=docx)
